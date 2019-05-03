@@ -43,12 +43,11 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="Qef-zN-7A2">
                                         <rect key="frame" x="0.0" y="65.5" width="337.5" height="303"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Asset 4" translatesAutoresizingMaskIntoConstraints="NO" id="vqV-4e-AvV">
-                                        <rect key="frame" x="8" y="249" width="160" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asset 5" translatesAutoresizingMaskIntoConstraints="NO" id="PqJ-tX-eir">
+                                        <rect key="frame" x="0.0" y="240" width="133" height="128.5"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Asset 5" translatesAutoresizingMaskIntoConstraints="NO" id="PqJ-tX-eir">
-                                        <rect key="frame" x="125" y="206" width="240" height="128"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Asset 4" translatesAutoresizingMaskIntoConstraints="NO" id="vqV-4e-AvV">
+                                        <rect key="frame" x="177" y="261" width="160" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -56,9 +55,14 @@
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="Qef-zN-7A2" firstAttribute="centerX" secondItem="Z05-rP-f72" secondAttribute="centerX" id="7Ca-la-Yc1"/>
+                                    <constraint firstItem="PqJ-tX-eir" firstAttribute="top" secondItem="Qef-zN-7A2" secondAttribute="top" constant="174.5" id="BIg-fJ-bjj"/>
                                     <constraint firstItem="Qef-zN-7A2" firstAttribute="centerY" secondItem="Z05-rP-f72" secondAttribute="centerY" id="EsJ-L3-qHJ"/>
                                     <constraint firstItem="Qef-zN-7A2" firstAttribute="width" secondItem="Z05-rP-f72" secondAttribute="width" id="O0P-WH-xgM"/>
+                                    <constraint firstItem="PqJ-tX-eir" firstAttribute="bottom" secondItem="Qef-zN-7A2" secondAttribute="bottom" id="TJP-ip-qPO"/>
+                                    <constraint firstItem="PqJ-tX-eir" firstAttribute="trailing" secondItem="Qef-zN-7A2" secondAttribute="trailing" constant="-204.5" id="aEB-LQ-jga"/>
+                                    <constraint firstItem="PqJ-tX-eir" firstAttribute="width" secondItem="Qef-zN-7A2" secondAttribute="width" constant="-204.5" id="bVJ-2t-Vgv"/>
                                     <constraint firstItem="Qef-zN-7A2" firstAttribute="height" secondItem="Z05-rP-f72" secondAttribute="height" multiplier="0.7" id="ns9-xI-DKp"/>
+                                    <constraint firstItem="PqJ-tX-eir" firstAttribute="leading" secondItem="Qef-zN-7A2" secondAttribute="leading" id="v1T-xP-Tt7"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Uyd-GF-fDO" appends="YES" id="lsm-cc-6H8"/>
@@ -123,7 +127,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+            <point key="canvasLocation" x="136.80000000000001" y="126.38680659670166"/>
         </scene>
     </scenes>
     <resources>

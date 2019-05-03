@@ -117,25 +117,27 @@ class ViewController: UIViewController {
     }
     
     @IBAction func likeTouched(_ sender: Any) {
-//        UIView.animate(withDuration: 0.3, animations: {
-//            self.firstCardView.center = CGPoint(x: self.firstCardView.center.x-400, y: self.firstCardView.center.y)
-//        }, completion: { _ in
-//            self.resetCardPosition()
-//        })
+        UIView.animate(withDuration: 0.3, animations: {
+            self.firstCardView.center = CGPoint(x: self.firstCardView.center.x-400, y: self.firstCardView.center.y)
+        }, completion: { _ in
+            self.resetCardPosition()
+        })
     }
     
     func resetCardPosition() {
-        firstCardView.transform = .identity
-        firstCardView.alpha = 1
-        firstImageIndex += 1
-        secondImageIndex += 1
-        firstCardImageView.image = UIImage(named: imagesArray[firstImageIndex])
-        secondCardImageView.image = UIImage(named: imagesArray[secondImageIndex])
-        likeImage.alpha = 0
-        dislikeImage.alpha = 0
-        firstCardView.center = self.view.center
-        secondCardView.alpha = 0.6
+        if secondImageIndex < 7 {
+            firstCardView.transform = .identity
+            firstCardView.alpha = 1
+            firstImageIndex += 1
+            secondImageIndex += 1
+            firstCardImageView.image = UIImage(named: imagesArray[firstImageIndex])
+            secondCardImageView.image = UIImage(named: imagesArray[secondImageIndex])
+            likeImage.alpha = 0
+            dislikeImage.alpha = 0
+            firstCardView.center = self.view.center
+            secondCardView.alpha = 0.6
 
+        }
     }
 }
 
