@@ -13,6 +13,10 @@
 		2931E87E227B615100892DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2931E87D227B615100892DCE /* Assets.xcassets */; };
 		2931E881227B615100892DCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2931E87F227B615100892DCE /* LaunchScreen.storyboard */; };
 		2931E889227BBFAD00892DCE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2931E888227BBFAD00892DCE /* Constants.swift */; };
+		29852347227DD1AF0016BC02 /* ChavosoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29852346227DD1AF0016BC02 /* ChavosoView.xib */; };
+		2985234A227DD25E0016BC02 /* ChavosoItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29852349227DD25E0016BC02 /* ChavosoItemCollectionViewCell.swift */; };
+		2985234D227DDB2B0016BC02 /* ChavososViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2985234C227DDB2B0016BC02 /* ChavososViewController.swift */; };
+		2985234F227E5CDC0016BC02 /* ChavosoSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2985234E227E5CDC0016BC02 /* ChavosoSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		2931E880227B615100892DCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2931E882227B615100892DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2931E888227BBFAD00892DCE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		29852346227DD1AF0016BC02 /* ChavosoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChavosoView.xib; sourceTree = "<group>"; };
+		29852349227DD25E0016BC02 /* ChavosoItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChavosoItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		2985234C227DDB2B0016BC02 /* ChavososViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChavososViewController.swift; sourceTree = "<group>"; };
+		2985234E227E5CDC0016BC02 /* ChavosoSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChavosoSingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		2931E875227B614F00892DCE /* Chavooso */ = {
 			isa = PBXGroup;
 			children = (
+				2985234B227DD8C40016BC02 /* Controllers */,
+				29852348227DD1E40016BC02 /* Views */,
 				2931E876227B614F00892DCE /* AppDelegate.swift */,
 				2931E878227B614F00892DCE /* ViewController.swift */,
 				2931E87A227B614F00892DCE /* Main.storyboard */,
@@ -63,8 +73,26 @@
 				2931E87F227B615100892DCE /* LaunchScreen.storyboard */,
 				2931E882227B615100892DCE /* Info.plist */,
 				2931E888227BBFAD00892DCE /* Constants.swift */,
+				2985234E227E5CDC0016BC02 /* ChavosoSingleton.swift */,
 			);
 			path = Chavooso;
+			sourceTree = "<group>";
+		};
+		29852348227DD1E40016BC02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29852346227DD1AF0016BC02 /* ChavosoView.xib */,
+				29852349227DD25E0016BC02 /* ChavosoItemCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2985234B227DD8C40016BC02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2985234C227DDB2B0016BC02 /* ChavososViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +155,7 @@
 			files = (
 				2931E881227B615100892DCE /* LaunchScreen.storyboard in Resources */,
 				2931E87E227B615100892DCE /* Assets.xcassets in Resources */,
+				29852347227DD1AF0016BC02 /* ChavosoView.xib in Resources */,
 				2931E87C227B614F00892DCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2931E879227B614F00892DCE /* ViewController.swift in Sources */,
+				2985234F227E5CDC0016BC02 /* ChavosoSingleton.swift in Sources */,
 				2931E877227B614F00892DCE /* AppDelegate.swift in Sources */,
 				2931E889227BBFAD00892DCE /* Constants.swift in Sources */,
+				2985234A227DD25E0016BC02 /* ChavosoItemCollectionViewCell.swift in Sources */,
+				2985234D227DDB2B0016BC02 /* ChavososViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

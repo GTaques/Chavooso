@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChavosoItemCollectionViewCell" customModule="Chavooso" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2ln-Tx-cYd">
+                    <rect key="frame" x="0.0" y="50" width="207" height="210"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KXz-R2-PrI">
+                    <rect key="frame" x="134" y="225" width="58" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="KXz-R2-PrI" secondAttribute="height" multiplier="1:1" id="4JT-fB-0Up"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2ln-Tx-cYd" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="54L-hU-pou"/>
+                <constraint firstItem="2ln-Tx-cYd" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.7" id="CE6-VO-VC1"/>
+                <constraint firstItem="2ln-Tx-cYd" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="CLS-ZO-fzP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KXz-R2-PrI" secondAttribute="trailing" constant="15" id="KF2-vf-uu5"/>
+                <constraint firstItem="KXz-R2-PrI" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="-15" id="O7u-gv-WWM"/>
+                <constraint firstItem="KXz-R2-PrI" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.2" id="jjH-H7-1Xp"/>
+                <constraint firstItem="2ln-Tx-cYd" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="xah-eL-W3p"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="chavosoImage" destination="2ln-Tx-cYd" id="maQ-3z-1Yv"/>
+                <outlet property="starIconView" destination="KXz-R2-PrI" id="Y4G-0L-ncu"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="35.491071428571423"/>
+        </view>
+    </objects>
+</document>
